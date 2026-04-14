@@ -9,9 +9,9 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="pub.math:multiplyFloatList" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT></COMMENT>
-</INVOKE>
+</MAP>
 </SEQUENCE>
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="CATCH">

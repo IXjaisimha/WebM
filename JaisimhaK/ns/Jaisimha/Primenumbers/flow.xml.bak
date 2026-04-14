@@ -3086,7 +3086,7 @@
 
   <!-- nodes -->
 
-<SEQUENCE NAME="%Rem%==0" TIMEOUT="" EXIT-ON="FAILURE">
+<SEQUENCE NAME="%Rem%==0" TIMEOUT="" EXIT-ON="SUCCESS">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
