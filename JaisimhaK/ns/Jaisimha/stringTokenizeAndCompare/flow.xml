@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -539,6 +540,15 @@
 </MAPDELETE>
 
 <MAPDELETE FIELD="/str2;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/inString;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/StringToken;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/delim;1;0">
 </MAPDELETE>
 </MAP>
 </FLOW>
