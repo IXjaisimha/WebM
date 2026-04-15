@@ -106,7 +106,7 @@
 
   <!-- nodes -->
 
-<MAPINVOKE SERVICE="Jaisimha:findingRemainder" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+<MAPINVOKE SERVICE="Jaisimha.myPractice:findingRemainder" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
 
   <!-- nodes -->
 
