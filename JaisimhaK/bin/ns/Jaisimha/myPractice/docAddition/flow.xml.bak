@@ -43,7 +43,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">Jaisimha:testDoc</value>
+        <value name="rec_ref">Jaisimha.testDocuments:testDoc</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -106,7 +106,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">Jaisimha:testDoc</value>
+        <value name="rec_ref">Jaisimha.testDocuments:testDoc</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -124,10 +124,10 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/document;4;0;Jaisimha:testDoc/a;1;0" TO="/num1;1;0">
+<MAPCOPY FROM="/document;4;0;Jaisimha.testDocuments:testDoc/a;1;0" TO="/num1;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/document;4;0;Jaisimha:testDoc/b;1;0" TO="/num2;1;0">
+<MAPCOPY FROM="/document;4;0;Jaisimha.testDocuments:testDoc/b;1;0" TO="/num2;1;0">
 </MAPCOPY>
 </MAP>
 
