@@ -135,7 +135,7 @@
 
   <!-- nodes -->
 
-<MAPINVOKE SERVICE="pub.math:addFloatList" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+<MAPINVOKE SERVICE="pub.math:addIntList" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
 
   <!-- nodes -->
 
