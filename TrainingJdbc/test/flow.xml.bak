@@ -4,7 +4,7 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="pub.math:subtractInts" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="pub.math:addInts" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -17,7 +17,7 @@
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
     <value name="is_public">false</value>
-    <value name="field_name">subtractIntsInput</value>
+    <value name="field_name">addIntsInput</value>
     <value name="field_type">record</value>
     <value name="field_dim">0</value>
     <value name="nillable">true</value>
@@ -74,7 +74,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">sub_ip1</value>
+        <value name="field_name">a</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
@@ -93,7 +93,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">sub_ip2</value>
+        <value name="field_name">b</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
@@ -110,10 +110,10 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/sub_ip1;1;0" TO="/num1;1;0">
+<MAPCOPY FROM="/a;1;0" TO="/num1;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/sub_ip2;1;0" TO="/num2;1;0">
+<MAPCOPY FROM="/a;1;0" TO="/num2;1;0">
 </MAPCOPY>
 </MAP>
 
@@ -135,28 +135,6 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">a</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">b</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
         <value name="field_name">num1</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
@@ -185,7 +163,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">sub_ip1</value>
+        <value name="field_name">a</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
@@ -204,7 +182,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">sub_output</value>
+        <value name="field_name">c</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
@@ -223,7 +201,7 @@
           <value name="field_password">false</value>
         </record>
         <value name="is_public">false</value>
-        <value name="field_name">sub_ip2</value>
+        <value name="field_name">b</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
@@ -255,7 +233,7 @@
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
     <value name="is_public">false</value>
-    <value name="field_name">subtractIntsOutput</value>
+    <value name="field_name">addIntsOutput</value>
     <value name="field_type">record</value>
     <value name="field_dim">0</value>
     <value name="nillable">true</value>
@@ -281,20 +259,8 @@
 
   <!-- nodes -->
 
-<MAPDELETE FIELD="/a;1;0">
-</MAPDELETE>
-
-<MAPDELETE FIELD="/b;1;0">
-</MAPDELETE>
-
-<MAPCOPY FROM="/value;1;0" TO="/sub_output;1;0">
+<MAPCOPY FROM="/value;1;0" TO="/c;1;0">
 </MAPCOPY>
-
-<MAPDELETE FIELD="/sub_ip2;1;0">
-</MAPDELETE>
-
-<MAPDELETE FIELD="/sub_ip1;1;0">
-</MAPDELETE>
 </MAP>
 </INVOKE>
 </FLOW>
