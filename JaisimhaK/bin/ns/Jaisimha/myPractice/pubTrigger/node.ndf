@@ -36,7 +36,7 @@
             <value name="messageType">Jaisimha.testDocuments:pubDoc</value>
             <value name="filter"></value>
           </record>
-          <value name="serviceName">Jaisimha.myPractice:pubServices</value>
+          <value name="serviceName">Jaisimha.myPractice:subServices</value>
           <value name="conditionName">Condition1</value>
         </record>
       </record>
